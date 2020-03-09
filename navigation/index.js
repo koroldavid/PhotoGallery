@@ -1,4 +1,4 @@
-import * as React               from 'react';
+import React               		from 'react';
 import { NavigationContainer }  from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -15,7 +15,10 @@ export default function Navigation() {
 					name='Gallery'
 					component={Gallery}
 				/>
-				<Stack.Screen name='Photo' component={Photo} />
+				<Stack.Screen 
+					name='Photo' 
+					component={Photo} 
+				/>
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

@@ -21,11 +21,10 @@ export default function Gallery({navigation, urls, name}) {
 
 const styles = StyleSheet.create({
 	container: {
-		width: '48%',
+		flex: 1,
 		margin: '1%'
 	},
 	image : {
-		width: '100%',
 		height: 150,
 		resizeMode: 'contain'
 	},

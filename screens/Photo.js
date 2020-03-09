@@ -1,25 +1,19 @@
-import React        		from 'react';
-import { StyleSheet, View } from 'react-native';
-import Image                from 'react-native-image-progress';
-import PropTypes            from 'prop-types';
+import React          from 'react';
+import { StyleSheet } from 'react-native';
+import Image          from 'react-native-image-progress';
+import PropTypes      from 'prop-types';
 
 
 function Photo({route}) {
 	return (
-		<View style={styles.container}>
-			<Image 
-				style={styles.image}
-				source={{uri: route.params.photoUrl}}
-			/>
-		</View>
+		<Image 
+			style={styles.image}
+			source={{uri: route.params.photoUrl}}
+		/>
 	);
 }
 
 const styles = StyleSheet.create({
-	container: {
-		width: '100%',
-		height: '100%'
-	},
 	image: {
 		width: '100%',
 		height: '100%',
