@@ -1,10 +1,10 @@
-import React                from 'react';
+import React        		from 'react';
 import { StyleSheet, View } from 'react-native';
 import Image                from 'react-native-image-progress';
 import PropTypes            from 'prop-types';
 
 
-export default function Photo({route}) {
+function Photo({route}) {
 	return (
 		<View style={styles.container}>
 			<Image 
@@ -30,3 +30,5 @@ const styles = StyleSheet.create({
 Photo.propTypes = {
 	route : PropTypes.object.isRequired
 };
+
+export default React.memo(Photo);
